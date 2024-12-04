@@ -6,6 +6,7 @@ import Potential from "./components/potential";
 import Team from "./components/team";
 import Guide from "./components/guide";
 import Commitet from "./components/commitet";
+import Footer from "./components/footer";
 
 function App() {
    return (
@@ -16,6 +17,7 @@ function App() {
          <Guide />
          <Team />
          <Commitet />
+         <Footer />
       </div>
    );
 }
