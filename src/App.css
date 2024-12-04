@@ -221,6 +221,163 @@ body {
 .potential {
    text-align: center;
 }
-.potential p{
-  font-size: 18px;
+.potential p {
+   font-size: 18px;
+}
+
+/* team */
+#team {
+   padding-top: 5%;
+}
+.team {
+   width: 100%;
+   border-radius: 50px;
+   background-color: #f2f2f7;
+   padding: 2% 0;
+   display: flex;
+}
+.team .left {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   justify-content: space-between;
+}
+.team .who {
+   display: flex;
+   flex-direction: row;
+   gap: 25px;
+}
+.team .who .lines {
+   position: relative;
+}
+.team .who .lines .grey-line {
+   background-color: #a0a0a0;
+   position: absolute;
+   width: 1px;
+   height: 100%;
+}
+.team .who .lines .black-line {
+   background-color: #494947;
+   position: absolute;
+   height: 50%;
+   width: 1px;
+   bottom: 0;
+}
+.team .who .guide {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   justify-content: space-between;
+   width: 60%;
+}
+.team .who .guide p {
+   color: #494947;
+   font-weight: 400;
+   font-size: 16px;
+   display: flex;
+   flex-wrap: nowrap;
+   margin: 0;
+}
+.team .who .guide #active {
+   color: #2d2d2c;
+}
+.team p {
+   font-size: 36px;
+   line-height: 43.6px;
+   width: 75%;
+}
+.team .info {
+   display: flex;
+   flex-direction: row;
+   gap: 2%;
+}
+.team a {
+   background-color: #00458a;
+   padding: 10px 15px;
+   border-radius: 15px;
+   color: #fffcff;
+   text-decoration: none;
+   font-weight: 400;
+}
+.team .container {
+   display: flex;
+   flex-direction: row;
+}
+
+/* guide */
+#guide {
+   padding-top: 5%;
+}
+.guide1 {
+   width: 100%;
+   border-radius: 50px;
+   background-color: #f2f2f7;
+   padding: 2% 0;
+   display: flex;
+}
+.guide1 .left {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   justify-content: space-between;
+}
+.guide1 .who {
+   display: flex;
+   flex-direction: row;
+   gap: 25px;
+}
+.guide1 .who .lines {
+   position: relative;
+}
+.guide1 .who .lines .grey-line {
+   background-color: #a0a0a0;
+   position: absolute;
+   width: 1px;
+   height: 100%;
+}
+.guide1 .who .lines .black-line {
+   background-color: #494947;
+   position: absolute;
+   height: 50%;
+   width: 1px;
+}
+.guide1 .who .guide {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   justify-content: space-between;
+   width: 60%;
+}
+.guide1 .who .guide p {
+   color: #494947;
+   font-weight: 400;
+   font-size: 16px;
+   display: flex;
+   flex-wrap: nowrap;
+   margin: 0;
+}
+.guide1 .who .guide #active {
+   color: #2d2d2c;
+}
+.guide1 p {
+   font-size: 36px;
+   line-height: 43.6px;
+   width: 75%;
+}
+.guide1 .info {
+   display: flex;
+   flex-direction: row;
+   gap: 2%;
+}
+.guide1 a {
+   background-color: #00458a;
+   padding: 10px 15px;
+   border-radius: 15px;
+   color: #fffcff;
+   text-decoration: none;
+   font-weight: 400;
+}
+.guide1 .container {
+   display: flex;
+   flex-direction: row;
 }
