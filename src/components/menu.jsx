@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 const Menu = () => {
    const [isOpen, setIsOpen] = useState(false); // Track if the menu is open or closed
 
@@ -12,12 +11,14 @@ const Menu = () => {
          <div className="container">
             <div className="menu">
                <div className="logo">
-                  <img src="img/logo.png" alt="" />
+                  <a href="/">
+                     <img src="img/logo.png" alt="" />
+                  </a>
                </div>
                <div className={`nav ${isOpen ? "open" : ""}`}>
-                  <a href="#about">О нас</a>
-                  <a href="#guide">Руководство</a>
-                  <a href="#activity">Деятельность</a>
+                  <a href="/about">О нас</a>
+                  <a href="/guide">Руководство</a>
+                  <a href="/activity">Деятельность</a>
                   <a id="phone" href="#">
                      <img src="img/phone.png" alt="" />
                      +7 (7171) 156 22 88
