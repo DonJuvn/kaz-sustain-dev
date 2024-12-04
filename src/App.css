@@ -562,3 +562,13 @@ p {
 .carousel-image.fade {
   opacity: 0; 
 }
+
+/* join us */
+#join-us{
+  padding-top: 5%;
+}
+.join-us{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

@@ -10,6 +10,7 @@ import Mission from "../components/mission";
 import Values from "../components/values";
 import Sight from "../components/sight";
 import Carousel from "../components/carousel";
+import JoinUs from "../components/join-us";
 
 const Home = () => {
    return (
@@ -20,6 +21,7 @@ const Home = () => {
          <Values />
          <Sight />
          <Carousel />
+         <JoinUs />
       </>
    );
 };
