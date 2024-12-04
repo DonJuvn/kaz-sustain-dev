@@ -381,3 +381,21 @@ body {
    display: flex;
    flex-direction: row;
 }
+
+/* commitet */
+#commitet{
+  padding-top: 5%;
+}
+.commitet{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 5%;
+}
+.commitet #title{
+  width: 55%;
+}
+.commitet p{
+  width: 50%;
+  font-size: 18px;
+}

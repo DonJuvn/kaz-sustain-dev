@@ -5,6 +5,7 @@ import About from "./components/about";
 import Potential from "./components/potential";
 import Team from "./components/team";
 import Guide from "./components/guide";
+import Commitet from "./components/commitet";
 
 function App() {
    return (
@@ -14,6 +15,7 @@ function App() {
          <Potential />
          <Guide />
          <Team />
+         <Commitet />
       </div>
    );
 }
