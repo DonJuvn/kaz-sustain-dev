@@ -1,5 +1,4 @@
-import React from "react";
-import BgMain from "../components/bg-main";
+import React from "react";import BgMain from "../components/bg-main";
 import Potential from "../components/potential";
 import Guide from "../components/guide";
 import Team from "../components/team";
@@ -10,6 +9,7 @@ import WhoAreWe from "../components/whoarewe";
 import Mission from "../components/mission";
 import Values from "../components/values";
 import Sight from "../components/sight";
+import Carousel from "../components/carousel";
 
 const Home = () => {
    return (
@@ -19,6 +19,7 @@ const Home = () => {
          <Mission />
          <Values />
          <Sight />
+         <Carousel />
       </>
    );
 };

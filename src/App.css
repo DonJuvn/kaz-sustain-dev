@@ -539,3 +539,26 @@ p {
   flex-direction: row;
   justify-content: space-between;
 }
+
+
+/* carousel */
+#carousel {
+  padding-top: 5%;
+}
+.carousel {
+  width: 100%;
+  position: relative;
+}
+.carousel img {
+  width: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease-in-out;
+  cursor: pointer;
+  transition: .3s;
+}
+.carousel img:hover{
+  transform: scale(1.005);
+}
+.carousel-image.fade {
+  opacity: 0; 
+}
