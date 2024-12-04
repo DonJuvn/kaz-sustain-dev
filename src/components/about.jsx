@@ -16,9 +16,7 @@ const About = () => {
                      <a href="#">Instagram<img src="img/link.png" alt="" /></a>
                   </div>
                </div>
-               <div className="img">
-                  <img src="img/bg.png" alt="" />
-               </div>
+               
             </div>
          </div>
       </div>

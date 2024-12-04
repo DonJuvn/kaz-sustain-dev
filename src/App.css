@@ -204,10 +204,10 @@ body {
    width: 16px;
    aspect-ratio: 1;
 }
-.about .img {
+#bg .img {
    width: 100%;
 }
-.about .img img {
+#bg .img img {
    width: 100%;
 }
 

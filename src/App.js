@@ -7,12 +7,14 @@ import Team from "./components/team";
 import Guide from "./components/guide";
 import Commitet from "./components/commitet";
 import Footer from "./components/footer";
+import BgMain from "./components/bg-main";
 
 function App() {
    return (
       <div className="App">
          <Menu />
          <About />
+         <BgMain />
          <Potential />
          <Guide />
          <Team />
