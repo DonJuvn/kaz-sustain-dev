@@ -167,7 +167,7 @@ body {
    width: 45%;
    justify-content: space-between;
 }
-.about .text .inner #title {
+#title {
    font-size: 48px;
    margin: 0;
    line-height: 57.6px;
@@ -175,7 +175,7 @@ body {
    color: #494947;
    margin-bottom: 2%;
 }
-.about .text .inner #title span {
+#title span {
    color: #00458a;
 }
 .about .text .inner p {
@@ -190,7 +190,7 @@ body {
    flex-direction: row;
    width: 30%;
    justify-content: space-between;
-   align-items:end;
+   align-items: end;
 }
 .about .text .links a {
    text-decoration: none;
@@ -204,9 +204,23 @@ body {
    width: 16px;
    aspect-ratio: 1;
 }
-.about .img{
-  width: 100%;
+.about .img {
+   width: 100%;
 }
-.about .img img{
-  width: 100%;
+.about .img img {
+   width: 100%;
+}
+
+/* potential */
+#potential {
+   padding-top: 5%;
+}
+#potential .container {
+   width: 56%;
+}
+.potential {
+   text-align: center;
+}
+.potential p{
+  font-size: 18px;
 }
