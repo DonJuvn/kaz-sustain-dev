@@ -523,7 +523,7 @@ body {
 p {
    margin: 0;
 }
-.item p {
+.values .item p {
    width: 53.5%;
    display: flex;
    justify-content: end;
@@ -587,8 +587,8 @@ p {
 .form .left {
    padding: 5% 0 0 5%;
    height: 100%;
-  display: flex;
-  flex-direction: column;
+   display: flex;
+   flex-direction: column;
 }
 .form-container {
    width: 100%;
@@ -641,8 +641,40 @@ form button {
 form button:hover {
    background-color: #00356a;
 }
-.form p{
-  color: #A0A0A0;
-  width: 60%;
-  margin: 5% 0;
+.form p {
+   color: #a0a0a0;
+   width: 60%;
+   margin: 5% 0;
+}
+
+/* chronology */
+#chronology {
+   padding-top: 5%;
+}
+.chronology {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding: 2% 3%;
+   background-color: #f2f2f7;
+   border-radius: 50px;
+   justify-content: space-between;
+}
+.chronology .item {
+   background-color: #fffcff;
+   padding: 2% 3%;
+   border-radius: 50px;
+   width: 26%;
+   aspect-ratio: 383/254;
+   margin-bottom: 2%;
+}
+.chronology .item p{
+  max-width: 100%;
+  text-align-last: left;
+  color: #494947;
+  font-size: 20px;
+}
+.chronology .item #title{
+  margin-bottom: 15%;
+  font-size: 46px;
 }
