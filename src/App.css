@@ -1,117 +1,212 @@
 html {
    scroll-behavior: smooth;
 }
+body {
+   font-family: "Atyp Text", sans-serif;
+   max-width: 100vw;
+   overflow-x: hidden;
+}
 .container {
    width: 90%;
    margin: 0 auto;
 }
 @font-face {
    font-family: "Atyp Text";
+   src: url("../public/font/AtypDisplay-Light.woff2") format("woff2"),
+      url("../public/font/AtypDisplay-Light.woff") format("woff"),
+      url("../public/font/AtypText-Light.ttf") format("truetype");
+   font-weight: 200; /* Light weight */
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Atyp Text";
+   src: url("../public/font/AtypDisplay-Regular.woff2") format("woff2"),
+      url("../public/font/AtypDisplay-Regular.woff") format("woff"),
+      url("../public/font/AtypText-Regular.ttf") format("truetype");
+   font-weight: 400; /* Normal weight */
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Atyp Text";
+   src: url("../public/font/AtypDisplay-Semibold.woff2") format("woff2"),
+      url("../public/font/AtypDisplay-Semibold.woff") format("woff"),
+      url("../public/font/AtypText-Semibold.ttf") format("truetype");
+   font-weight: 600; /* Semi-Bold weight */
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Atyp Text";
    src: url("../public/font/AtypDisplay-Bold.woff2") format("woff2"),
       url("../public/font/AtypDisplay-Bold.woff") format("woff"),
       url("../public/font/AtypText-Bold.ttf") format("truetype");
-   font-weight: normal;
+   font-weight: 700; /* Bold weight */
    font-style: normal;
 }
 
 /* menu */
 #menu {
-  display: flex;
-  width: 100vw;
-  overflow: hidden;
+   padding-top: 2%;
+   display: flex;
+   width: 100vw;
+   overflow: hidden;
 }
-
 #menu .menu {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
-  padding: 2% 0;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   width: 100%;
+   justify-content: space-between;
+   /* padding: 2% 0; */
 }
 
 .menu .nav {
-  display: flex;
-  flex-direction: row;
-  width: 40%;
-  justify-content: space-between;
+   display: flex;
+   flex-direction: row;
+   width: 45%;
+   justify-content: space-between;
 }
 
 #menu .menu a {
-  font-weight: 400;
-  align-items: center;
-  text-decoration: none;
-  color: #494947;
-  display: flex;
-  flex-wrap: nowrap;
-  white-space: nowrap;
+   font-weight: 400;
+   align-items: center;
+   text-decoration: none;
+   color: #494947;
+   display: flex;
+   flex-wrap: nowrap;
+   white-space: nowrap;
 }
 
 .menu #phone {
-  color: #00458a;
+   color: #00458a;
 }
 
 /* Hamburger menu (toggle button) */
 #menu .menu .hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  cursor: pointer;
+   display: none;
+   flex-direction: column;
+   gap: 5px;
+   cursor: pointer;
 }
 
 #menu .menu .hamburger div {
-  width: 25px;
-  height: 3px;
-  background-color: #494947;
-  border-radius: 5px;
+   width: 25px;
+   height: 3px;
+   background-color: #494947;
+   border-radius: 5px;
 }
 
 /* For mobile screens */
 @media (max-width: 768px) {
-  #menu .menu {
-     flex-direction: column;
-     align-items: flex-start;
-  }
+   #menu .menu {
+      flex-direction: column;
+      align-items: flex-start;
+   }
 
-  .menu .nav {
-     width: 100%;
-     flex-direction: column;
-     gap: 10px;
-     margin-top: 20px;
-     display: none; /* Hide the menu by default on small screens */
-  }
+   .menu .nav {
+      width: 100%;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+      display: none; /* Hide the menu by default on small screens */
+   }
 
-  .menu .nav.open {
-     display: flex; /* Show the menu when it's open */
-  }
+   .menu .nav.open {
+      display: flex; /* Show the menu when it's open */
+   }
 
-  .menu .hamburger {
-     display: flex; /* Show the hamburger button on mobile */
-  }
+   .menu .hamburger {
+      display: flex; /* Show the hamburger button on mobile */
+   }
 
-  .menu .nav a {
-     font-size: 14px;
-     padding: 8px 0;
-  }
+   .menu .nav a {
+      font-size: 14px;
+      padding: 8px 0;
+   }
 
-  .logo img {
-     width: 120px;
-  }
+   .logo img {
+      width: 120px;
+   }
 
-  /* Optional: Hide phone number on mobile */
-  .menu #phone {
-     display: none;
-  }
+   /* Optional: Hide phone number on mobile */
+   .menu #phone {
+      display: none;
+   }
 }
 
 /* Further mobile adjustments */
 @media (max-width: 480px) {
-  .menu .nav a {
-     font-size: 12px;
-  }
+   .menu .nav a {
+      font-size: 12px;
+   }
 
-  .logo img {
-     width: 100px;
-  }
+   .logo img {
+      width: 100px;
+   }
 }
 
+/* about */
+#about {
+   padding-top: 5%;
+}
+.about {
+   display: flex;
+   flex-direction: column;
+}
+.about .text {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-bottom: 3.5%;
+}
+.about .text .inner {
+   display: flex;
+   flex-direction: column;
+   width: 45%;
+   justify-content: space-between;
+}
+.about .text .inner #title {
+   font-size: 48px;
+   margin: 0;
+   line-height: 57.6px;
+   font-weight: 400;
+   color: #494947;
+   margin-bottom: 2%;
+}
+.about .text .inner #title span {
+   color: #00458a;
+}
+.about .text .inner p {
+   font-size: 21px;
+   line-height: 21.6px;
+   font-weight: 400;
+   color: #494947;
+   margin: 0;
+}
+.about .text .links {
+   display: flex;
+   flex-direction: row;
+   width: 30%;
+   justify-content: space-between;
+   align-items:end;
+}
+.about .text .links a {
+   text-decoration: none;
+   color: #494947;
+   display: flex;
+   flex-direction: row;
+   gap: 15px;
+   align-items: center;
+}
+.about .text .links img {
+   width: 16px;
+   aspect-ratio: 1;
+}
+.about .img{
+  width: 100%;
+}
+.about .img img{
+  width: 100%;
+}
