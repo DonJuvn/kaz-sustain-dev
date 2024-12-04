@@ -668,21 +668,66 @@ form button:hover {
    aspect-ratio: 383/254;
    margin-bottom: 2%;
 }
-.chronology .item p{
-  max-width: 100%;
-  text-align-last: left;
-  color: #494947;
-  font-size: 20px;
+.chronology .item p {
+   max-width: 100%;
+   text-align-last: left;
+   color: #494947;
+   font-size: 20px;
 }
-.chronology .item #title{
-  margin-bottom: 15%;
-  font-size: 46px;
+.chronology .item #title {
+   margin-bottom: 15%;
+   font-size: 46px;
 }
 
 /* activity text */
-#activity-text{
-  padding-top: 5%;
+#activity-text {
+   padding-top: 5%;
 }
-#activity-text #title{
-  font-size: 48px;
+#activity-text #title {
+   font-size: 48px;
+}
+
+/* services */
+#services {
+   padding-top: 5%;
+}
+.services {
+   display: flex;
+   flex-direction: column;
+}
+.services .item {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-bottom: 2%;
+   gap: 2%;
+}
+.services .item .left {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 30vh;
+   padding: 2%;
+   background-color: #f2f2f7;
+   border-radius: 50px;
+   min-width: 20%;
+}
+.services .item .right {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   height: 30vh;
+   padding: 2%;
+   background-color: #f2f2f7;
+   border-radius: 50px;
+}
+.services .item p{
+  color: #494947;
+}
+.services .item .right #title {
+   width: 100%;
+   font-size: 40px;
+}
+.services .item img{
+   width: 197px;
 }
