@@ -487,6 +487,7 @@ body {
 .p p {
    font-size: 18px;
    color: #494947;
+   margin: 2% 0;
 }
 
 /* mission */
@@ -527,4 +528,14 @@ p {
    display: flex;
    justify-content: end;
    font-size: 18px;
+}
+
+/* sight */
+#sight{
+  padding-top: 5%;
+}
+.sight{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

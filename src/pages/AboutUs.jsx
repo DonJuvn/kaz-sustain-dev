@@ -9,6 +9,7 @@ import BgAbout from "../components/bg-about";
 import WhoAreWe from "../components/whoarewe";
 import Mission from "../components/mission";
 import Values from "../components/values";
+import Sight from "../components/sight";
 
 const Home = () => {
    return (
@@ -17,6 +18,7 @@ const Home = () => {
          <WhoAreWe />
          <Mission />
          <Values />
+         <Sight />
       </>
    );
 };
