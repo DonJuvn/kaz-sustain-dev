@@ -655,7 +655,7 @@ form button:hover {
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
-   padding: 2% 3%;
+   padding: 3%;
    background-color: #f2f2f7;
    border-radius: 50px;
    justify-content: space-between;
