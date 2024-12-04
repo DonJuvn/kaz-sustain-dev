@@ -11,6 +11,8 @@ import Values from "../components/values";
 import Sight from "../components/sight";
 import Carousel from "../components/carousel";
 import JoinUs from "../components/join-us";
+import Form from "../components/form";
+
 
 const Home = () => {
    return (
@@ -22,6 +24,7 @@ const Home = () => {
          <Sight />
          <Carousel />
          <JoinUs />
+         <Form />
       </>
    );
 };
