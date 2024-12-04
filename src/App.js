@@ -3,7 +3,7 @@ import Menu from "./components/menu";
 import About from "./components/about";
 import Footer from "./components/footer";
 import Home from "./pages/Home";
-import PageOne from "./pages/pageOne";
+import PageOne from "./pages/AboutUs";
 import PageTwo from "./pages/pageTwo";
 import PageThree from "./pages/pageThree";
 
@@ -17,9 +17,9 @@ function App() {
             <About />
             <Routes>
                <Route path="/" element={<Home />} />
-               <Route path="/page-one" element={<PageOne />} />
-               <Route path="/page-two" element={<PageTwo />} />
-               <Route path="/page-three" element={<PageThree />} />
+               <Route path="/about" element={<PageOne />} />
+               <Route path="/guide" element={<PageTwo />} />
+               <Route path="/activity" element={<PageThree />} />
             </Routes>
             <Footer />
          </div>
