@@ -5,7 +5,7 @@ import Footer from "./components/footer";
 import Home from "./pages/Home";
 import PageOne from "./pages/AboutUs";
 import PageTwo from "./pages/Guide";
-import PageThree from "./pages/pageThree";
+import PageThree from "./pages/Activity";
 
 import "./App.css";
 

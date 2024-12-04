@@ -678,3 +678,11 @@ form button:hover {
   margin-bottom: 15%;
   font-size: 46px;
 }
+
+/* activity text */
+#activity-text{
+  padding-top: 5%;
+}
+#activity-text #title{
+  font-size: 48px;
+}
