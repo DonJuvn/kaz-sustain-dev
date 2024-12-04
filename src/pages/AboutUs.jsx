@@ -7,12 +7,14 @@ import Commitet from "../components/commitet";
 import About from "../components/about";
 import BgAbout from "../components/bg-about";
 import WhoAreWe from "../components/whoarewe";
+import Mission from "../components/mission";
 
 const Home = () => {
    return (
       <>
          <BgAbout />
          <WhoAreWe />
+         <Mission />
       </>
    );
 };
