@@ -675,7 +675,29 @@ body {
    color: #494947;
    margin: 2% 0;
 }
-
+@media screen and (max-width:768px) {
+   #whoarewe {
+      padding-top: 10%;
+   }
+   #mini-title {
+      font-size: 14px;
+      line-height: 15.6px;
+   }
+   .whoarewe {
+      flex-direction: column;
+   }
+   .whoarewe #title {
+      width: 100%;
+   }
+   .p {
+      width: 100%;
+   }
+   .p p {
+      font-size: 14px;
+      line-height: 17.8px;
+      margin: 2% 0;
+   }
+}
 /* mission */
 #mission {
    padding-top: 5%;
