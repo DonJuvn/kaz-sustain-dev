@@ -87,6 +87,7 @@ body {
 /* Hamburger menu (toggle button) */
 #menu .menu .hamburger {
    display: none;
+   /* display: flex; */
    flex-direction: column;
    gap: 5px;
    cursor: pointer;
@@ -95,31 +96,33 @@ body {
 #menu .menu .hamburger div {
    width: 25px;
    height: 3px;
-   background-color: #494947;
+   background-color: #00458a;
    border-radius: 5px;
 }
 
 /* For mobile screens */
 @media (max-width: 768px) {
    #menu .menu {
-      flex-direction: column;
+      flex-direction: row;
       align-items: flex-start;
+      padding-top: 5%;
+      flex-wrap: wrap;
    }
 
    .menu .nav {
       width: 100%;
       flex-direction: column;
-      gap: 10px;
+      /* gap: 10px; */
       margin-top: 20px;
       display: none; /* Hide the menu by default on small screens */
    }
 
    .menu .nav.open {
-      display: flex; /* Show the menu when it's open */
+      display: flex;
    }
 
-   .menu .hamburger {
-      display: flex; /* Show the hamburger button on mobile */
+   #menu .menu .hamburger {
+      display: flex;
    }
 
    .menu .nav a {
@@ -721,13 +724,13 @@ form button:hover {
    background-color: #f2f2f7;
    border-radius: 50px;
 }
-.services .item p{
-  color: #494947;
+.services .item p {
+   color: #494947;
 }
 .services .item .right #title {
    width: 100%;
    font-size: 40px;
 }
-.services .item img{
+.services .item img {
    width: 197px;
 }
