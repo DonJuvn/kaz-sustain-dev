@@ -512,17 +512,17 @@ body {
    width: 50%;
    font-size: 18px;
 }
-@media screen and (max-width:768px) {
-   #commitet{
+@media screen and (max-width: 768px) {
+   #commitet {
       padding-top: 10%;
    }
-   .commitet{
+   .commitet {
       flex-direction: column;
    }
-   .commitet #title{
+   .commitet #title {
       width: 100%;
    }
-   .commitet p{
+   .commitet p {
       width: 100%;
       font-size: 16px;
       line-height: 18.25px;
@@ -582,6 +582,57 @@ body {
    font-size: 16px;
    color: #fffcff;
    margin: 0;
+}
+@media screen and (max-width: 768px) {
+   #footer {
+      margin-top: 10%;
+   }
+   #footer .footer {
+      display: flex;
+      flex-direction: column;
+   }
+   .footer .top {
+      flex-direction: column;
+      justify-content: space-between;
+      height: 30vh;
+   }
+   .footer .top .info {
+      display: flex;
+      flex-direction: column;
+      gap: 10%;
+      width: 100%;
+      height: 100%;
+      margin-top: 10%;
+      justify-content: start;
+   }
+   .footer .top .info p {
+      font-size: 16px;
+      font-weight: 300;
+   }
+   .footer .bottom {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 3%;
+      height: 10vh;
+   }
+   .footer .bottom .links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 10%;
+   }
+   .footer .bottom .links a {
+      text-decoration: none;
+      color: #fffcff;
+      font-size: 16px;
+      margin: 0;
+   }
+   .footer .bottom p {
+      font-size: 16px;
+      color: #fffcff;
+      margin: 0;
+   }
 }
 
 /* whoarewe */
