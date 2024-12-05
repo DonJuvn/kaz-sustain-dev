@@ -104,9 +104,9 @@ body {
 @media (max-width: 768px) {
    #menu .menu {
       flex-direction: row;
-      align-items: flex-start;
       padding-top: 5%;
       flex-wrap: wrap;
+      align-items: center;
    }
 
    .menu .nav {
@@ -131,7 +131,7 @@ body {
    }
 
    .logo img {
-      width: 120px;
+      width: 180px;
    }
 
    /* Optional: Hide phone number on mobile */
@@ -141,7 +141,7 @@ body {
 }
 
 /* Further mobile adjustments */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
    .menu .nav a {
       font-size: 12px;
    }
@@ -149,7 +149,7 @@ body {
    .logo img {
       width: 100px;
    }
-}
+} */
 
 /* about */
 #about {
@@ -214,6 +214,34 @@ body {
 #bg .img img {
    width: 100%;
 }
+@media screen and (max-width: 768px) {
+   #title {
+      font-size: 28px;
+      line-height: 31.25px;
+   }
+   .about .text {
+      flex-direction: column;
+   }
+   .about .text .inner {
+      width: 100%;
+   }
+   .about .text .inner p {
+      font-size: 16px;
+      line-height: 17.25px;
+   }
+   .about .text .links {
+      width: 100%;
+      margin-top: 5%;
+   }
+   #bg .img {
+      height: 30vh;
+   }
+   #bg .img img {
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+   }
+}
 
 /* potential */
 #potential {
@@ -227,6 +255,22 @@ body {
 }
 .potential p {
    font-size: 18px;
+   color: #494947;
+}
+
+@media screen and (max-width: 768px) {
+   #potential{
+      padding-top: 10%;
+   }
+   #potential .container{
+      width: 90%;
+   }
+   .potential{
+      text-align: left;
+   }
+   .potential p{
+      font-size: 16px;
+   }
 }
 
 /* team */
