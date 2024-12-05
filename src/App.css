@@ -812,6 +812,18 @@ p {
 .carousel-image.fade {
    opacity: 0;
 }
+@media screen and (max-width: 768px) {
+   #carousel{
+      padding-top: 10%;
+   }
+   .carousel{
+   }
+   .carousel img{
+      object-fit: cover;
+      height: 100%;
+      border-radius: 20px;
+   }
+}
 
 /* join us */
 #join-us {
