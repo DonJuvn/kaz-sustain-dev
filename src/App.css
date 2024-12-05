@@ -512,6 +512,23 @@ body {
    width: 50%;
    font-size: 18px;
 }
+@media screen and (max-width:768px) {
+   #commitet{
+      padding-top: 10%;
+   }
+   .commitet{
+      flex-direction: column;
+   }
+   .commitet #title{
+      width: 100%;
+   }
+   .commitet p{
+      width: 100%;
+      font-size: 16px;
+      line-height: 18.25px;
+      color: #494947;
+   }
+}
 
 /* footer */
 #footer {
