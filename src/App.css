@@ -1015,9 +1015,9 @@ form button:hover {
       position: absolute;
       cursor: pointer; /* Add pointer for clickability */
       background-color: #f2f2f7;
-      padding: 5% ;
+      padding: 5%;
    }
-   .chronology .item p{
+   .chronology .item p {
       width: 90%;
    }
 
@@ -1063,10 +1063,10 @@ form button:hover {
    font-size: 48px;
 }
 @media screen and (max-width: 768px) {
-   #activity-text{
+   #activity-text {
       padding-top: 10%;
    }
-   #activity-text #title{
+   #activity-text #title {
       font-size: 24px;
    }
 }
@@ -1114,4 +1114,32 @@ form button:hover {
 }
 .services .item img {
    width: 197px;
+}
+
+@media screen and (max-width: 768px) {
+   #services {
+      padding-top: 15%;
+   }
+   .services .item .left {
+      background-color: transparent;
+      height: fit-content;
+      margin: 5% 0 10%;
+   }
+   .services .item .right {
+      background-color: transparent;
+      height: fit-content;
+   }
+   .services .item {
+      background-color: #f2f2f2;
+      flex-direction: column;
+      border-radius: 30px;
+      padding: 5%;
+      margin-bottom: 5%;
+   }
+   .services .item .right #title {
+      font-size: 22px;
+   }
+   .services .item .left #title {
+      display: none;
+   }
 }
