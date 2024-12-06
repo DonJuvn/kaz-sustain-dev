@@ -1,80 +1,82 @@
-import React from "react";
+import React, { useState } from "react";
+
 const Chronology = () => {
+   const [currentIndex, setCurrentIndex] = useState(0);
+
+   const chronologyItems = [
+      {
+         year: "1992 г.",
+         text: "1992 г. – окончил Университет Дружбы Народов им. П. Лумумбы в Москве, специализация – математика.",
+      },
+      {
+         year: "1992 - 1993 г.",
+         text: "Директор ТОО «Салым-Актау».",
+      },
+      {
+         year: "1993 - 1994 г.",
+         text: "Финансовый директор ТОО «Далель».",
+      },
+      {
+         year: "1994 - 1997 г.",
+         text: "Директор ТОО «Мунай».",
+      },
+      {
+         year: "1997 - 1998 г.",
+         text: "Генеральный директор ТОО СП «Oil Co».",
+      },
+      {
+         year: "1998 - 1999 г.",
+         text: "Генеральный директор АО «АктауТрансГаз».",
+      },
+      {
+         year: "1999 - 2000 г.",
+         text: "Директор ТОО «Мунай».",
+      },
+      {
+         year: "2000 - 2004 г.",
+         text: "Президент АО «МПК – РГП «Мангистауский Атомный Энергокомбинат».",
+      },
+      {
+         year: "2008 - 2024 гг.",
+         text: "Председатель ОЮЛ и ИП Союза «Группа компаний ИНЖИНИРИНГ».",
+      },
+      {
+         year: "С 2024 года",
+         text: "Председатель ОЮЛ и ИП Союза «Казахский институт ESG и Устойчивого Развития».",
+      },
+   ];
+
+   const handleItemClick = () => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % chronologyItems.length);
+   };
+
    return (
       <div id="chronology">
          <div className="container">
             <div className="chronology">
-               <div className="item">
-                  <h1 id="title">
-                     <span>1992 г.</span>
-                  </h1>
-                  <p>
-                     1992 г. – окончил Университет Дружбы Народов им. П. Лумумбы
-                     в Москве, специализация – математика.
-                  </p>
-               </div>
-               <div className="item">
-                  <h1 id="title">
-                     <span>1992 - 1993 г.</span>
-                  </h1>
-                  <p>Директор ТОО «Салым-Актау».</p>
-               </div>
-               <div className="item">
-                  <h1 id="title">
-                     <span>1993 - 1994 г.</span>
-                  </h1>
-                  <p>Финансовый директор ТОО «Далель».</p>
-               </div>
-               <div className="item">
-                  <h1 id="title">
-                     <span>1994 - 1997 г.</span>
-                  </h1>
-                  <p>Директор ТОО «Мунай».</p>
-               </div>
-               <div className="item">
-                  <h1 id="title">
-                     <span>1997 - 1998 г.</span>
-                  </h1>
-                  <p>Генеральный директор ТОО СП «Oil Co».</p>
-               </div>
-               <div className="item">
-                  <h1 id="title">
-                     <span>1998 - 1999 г.</span>
-                  </h1>
-                  <p>Генеральный директор АО «АктауТрансГаз».</p>
-               </div>
-               <div className="item">
-                  <h1 id="title">
-                     <span>1999 - 2000 г.</span>
-                  </h1>
-                  <p>Директор ТОО «Мунай».</p>
-               </div>
-               <div className="item">
-                  <h1 id="title">
-                     <span>2000 - 2004 г.</span>
-                  </h1>
-                  <p>
-                     Президент АО «МПК – РГП «Мангистауский Атомный
-                     Энергокомбинат».
-                  </p>
-               </div>
-               <div className="item">
-                  <h1 id="title">
-                     <span>2008 - 2024 гг.</span>
-                  </h1>
-                  <p>
-                     Председатель ОЮЛ и ИП Союза «Группа компаний ИНЖИНИРИНГ».
-                  </p>
-               </div>
-               <div className="item">
-                  <h1 id="title">
-                     <span>С 2024 года</span>
-                  </h1>
-                  <p>
-                     Председатель ОЮЛ и ИП Союза «Казахский институт ESG и
-                     Устойчивого Развития».
-                  </p>
-               </div>
+               {chronologyItems.map((item, index) => (
+                  <div
+                     key={index}
+                     className={`item ${index === currentIndex ? "active" : ""}`}
+                     onClick={index === currentIndex ? handleItemClick : null}
+                  >
+                     <h1 id="title">
+                        <span>{item.year}</span>
+                     </h1>
+                     <p>{item.text}</p>
+                  </div>
+               ))}
+            </div>
+            <div className="controls">
+               {chronologyItems.map((_, index) => (
+                  <span
+                     key={index}
+                     className={`control-dot ${
+                        index === currentIndex ? "active" : ""
+                     }`}
+                     onClick={() => setCurrentIndex(index)}
+                  ></span>
+               ))}
             </div>
          </div>
       </div>

@@ -783,10 +783,10 @@ p {
    justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
-   #sight{
+   #sight {
       padding-top: 10%;
    }
-   .sight{
+   .sight {
       flex-direction: column;
    }
 }
@@ -813,10 +813,10 @@ p {
    opacity: 0;
 }
 @media screen and (max-width: 768px) {
-   #carousel{
+   #carousel {
       padding-top: 10%;
    }
-   .carousel img{
+   .carousel img {
       object-fit: cover;
       height: 100%;
       border-radius: 20px;
@@ -832,11 +832,11 @@ p {
    flex-direction: row;
    justify-content: space-between;
 }
-@media screen and (max-width:768px) {
-   #join-us{
+@media screen and (max-width: 768px) {
+   #join-us {
       padding-top: 10%;
    }
-   .join-us{
+   .join-us {
       flex-direction: column;
    }
 }
@@ -917,8 +917,8 @@ form button:hover {
    margin: 5% 0;
 }
 
-@media screen and (max-width:768px) {
-   #form{
+@media screen and (max-width: 768px) {
+   #form {
       padding-top: 10%;
    }
    .form {
@@ -928,21 +928,21 @@ form button:hover {
       padding: 10% 5% 0 5%;
       height: 100%;
       width: 100%;
-   }   
+   }
    form {
       gap: 16px;
       z-index: 5;
    }
-   
+
    form input {
       width: 100%;
       font-size: 14px;
    }
- 
+
    .inline-inputs input {
       flex: 1;
    }
-   
+
    form button {
       font-size: 14px;
       font-weight: 400;
@@ -950,7 +950,7 @@ form button:hover {
    .form p {
       width: 100%;
    }
-   .form .right{
+   .form .right {
       position: absolute;
       display: flex;
       top: 0;
@@ -961,6 +961,7 @@ form button:hover {
 }
 
 /* chronology */
+/* Desktop Design */
 #chronology {
    padding-top: 5%;
 }
@@ -990,6 +991,68 @@ form button:hover {
 .chronology .item #title {
    margin-bottom: 15%;
    font-size: 46px;
+}
+#chronology .controls {
+   display: none; /* Hide dots for desktop */
+}
+
+@media (max-width: 768px) {
+   .chronology {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+      padding: 0;
+      background-color: transparent;
+   }
+
+   .chronology .item {
+      min-width: 100%;
+      transform: translateX(-100%);
+      transition: transform 0.5s ease-in-out;
+      opacity: 0;
+      position: absolute;
+      cursor: pointer; /* Add pointer for clickability */
+      background-color: #f2f2f7;
+      padding: 5% ;
+   }
+   .chronology .item p{
+      width: 90%;
+   }
+
+   .chronology .item.active {
+      transform: translateX(0);
+      opacity: 1;
+      position: relative;
+   }
+
+   /* Show dots for mobile */
+   #chronology .controls {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+      position: relative;
+   }
+
+   .control-dot {
+      width: 5px;
+      height: 5px;
+      background-color: transparent;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border: 1px solid #00458a;
+   }
+
+   .control-dot.active {
+      background-color: #00458a;
+   }
+
+   .control-dot:hover {
+      background-color: #00356a;
+   }
 }
 
 /* activity text */
