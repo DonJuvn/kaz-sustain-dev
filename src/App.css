@@ -493,6 +493,7 @@ body {
    }
    .guide1 .right {
       width: 100%;
+      margin-bottom: -20%;
    }
    .guide1 .right img {
       width: 100%;
