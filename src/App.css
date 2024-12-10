@@ -377,6 +377,8 @@ body {
    }
    .team .right {
       width: 100%;
+      height: auto;
+      margin-bottom: -20%;
    }
    .team .right img {
       width: 100%;
@@ -601,6 +603,7 @@ body {
       flex-direction: column;
       justify-content: space-between;
       height: 30vh;
+      padding-bottom: 10%;
    }
    .footer .top .info {
       display: flex;
@@ -752,7 +755,7 @@ p {
       padding-top: 10%;
    }
    .values {
-      height: 75vh;
+      height: 90vh;
    }
    .values .item {
       border-radius: 20px;
@@ -775,7 +778,7 @@ p {
 
 /* sight */
 #sight {
-   padding-top: 5%;
+   padding-top: 10%;
 }
 .sight {
    display: flex;
@@ -858,6 +861,7 @@ p {
    height: 100%;
    display: flex;
    flex-direction: column;
+   z-index: 5;
 }
 .form-container {
    width: 100%;
@@ -891,6 +895,7 @@ form input {
 
 .inline-inputs input {
    flex: 1;
+   /* width: 100%; */
 }
 
 form button {
@@ -916,6 +921,9 @@ form button:hover {
    width: 60%;
    margin: 5% 0;
 }
+.form-right {
+   z-index: 1;
+}
 
 @media screen and (max-width: 768px) {
    #form {
@@ -935,7 +943,7 @@ form button:hover {
    }
 
    form input {
-      width: 100%;
+      width: 96%;
       font-size: 14px;
    }
 
